@@ -1,7 +1,4 @@
-import Express from 'express';
+import {serverHttp} from './http';
+import './websocket';
 
-const app = Express();
-
-app.listen(8080, () => {
-  console.log('🚀Server listening at http://192.168.0.10:8080');
-})
+serverHttp.listen(8080, () => console.log('🚀 Server listening at http://192.168.0.10:8080 💜'));
